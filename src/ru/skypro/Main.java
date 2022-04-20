@@ -4,13 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        System.out.println("Homework 3.2");
-        float BoxerWeight1 = 78.2F;
-        float BoxerWeight2 = 82.7F;
-        float totalWeight = BoxerWeight1 + BoxerWeight2;
-        System.out.println("The total weight of the boxers is " + totalWeight + "kg");
+        byte bananas = 5;
+        short milk = 200;
+        byte iceCream = 2;
+        byte eggs = 4;
 
-        float differenceWeights = BoxerWeight2 - BoxerWeight1;
-        System.out.println("The difference between the boxers' weights is " + differenceWeights + "kg");
+        byte oneBananaWeight = 80;
+        byte oneHundredMLMilkWeight = 105; float oneMLMilkWeight = oneHundredMLMilkWeight / 100;
+        byte oneIceCreamWeight = 100;
+        byte oneEggWeight = 70;
+
+        int bananasWeight = bananas * oneBananaWeight;
+        float milkWeight = oneMLMilkWeight * milk;
+        int iceCreamWeight = iceCream * oneIceCreamWeight;
+        int eggsWeight = eggs * oneEggWeight;
+
+        float totalWeight = bananasWeight + milkWeight + iceCreamWeight + eggsWeight;
+        float totalKgWeight = totalWeight / 1000;
+        System.out.println("The total weight of the healthy breakfast is " + totalKgWeight + " kg");
     }
 }
